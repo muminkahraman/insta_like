@@ -1,0 +1,10 @@
+.rightSidebar {
+    background-color: rgb(241, 241, 241);
+    width: 280px;
+    height: calc(100% - 56px);
+    display: flex;
+    left: 0px;
+    position: absolute;
+    flex-direction: column;
+    padding: 8px;
+}

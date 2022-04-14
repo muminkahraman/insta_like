@@ -1,0 +1,56 @@
+.chatList {
+    background-color: rgb(241, 241, 241);
+    width: 280px;
+    height: calc(100% - 56px);
+    display: flex;
+    right: 0px;
+    position: absolute;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    width: calc (100% - 5px);
+    background-color: rgb(241, 241, 241);
+    height: 40px;
+    align-items: center;
+    padding: 5px;
+    border-radius: 8px;
+    margin-top: 5px;
+    transition: 0.1s;
+}
+
+.contact:hover {
+    background-color: rgb(204, 226, 249);
+    cursor: pointer;
+}
+
+.pic {
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.pic img {
+    width: 40px;
+    object-fit: cover;
+}
+
+.name {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.contactTitle {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
