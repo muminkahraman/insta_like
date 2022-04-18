@@ -1,0 +1,84 @@
+.page {
+    width: calc (100% - 100px);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.post {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    left: 310px;
+    top: 5px;
+    z-index: 2;
+}
+
+.profile-pic-div {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: cover;
+    justify-content: center; 
+}
+
+.profile-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(65, 65, 65);
+    margin-right: 10px;
+}
+
+.post_image {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 1;
+}
+
+.reactions {
+    height: 20px;
+    position: relative;
+    top: 520px;
+    left: 118px;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.coeur {
+    height: 100%;
+    margin-right: 5px;
+}
+
+.coeur-img {
+    height: 100%;
+}
+
+.like-number {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-right: 5px;
+    -webkit-text-stroke: 0.5px black;
+}

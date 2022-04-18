@@ -5,17 +5,22 @@ import Home from './Home';
 import Header from './Header';
 import ChatList from './ChatList';
 import RightSidebar from './RightSidebar';
+import PostList from './PostList';
+import Post from './Post';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
-          <Route path='/'>
+          <Route exact path='/'>
             <Header />
             <RightSidebar />
             <ChatList />
-            <Home />
+            <PostList />
+          </Route>
+          <Route path='/posttest'>
+            <Post />
           </Route>
         </Switch>
       </Router>

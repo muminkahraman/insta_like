@@ -3,7 +3,7 @@ import './PostList.css'
 
 function PostList() {
   return (
-    <div>PostList</div>
+    <div className='postList'>PostList</div>
   )
 }
 
