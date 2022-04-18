@@ -5,17 +5,21 @@ import Home from './Home';
 import Header from './Header';
 import ChatList from './ChatList';
 import RightSidebar from './RightSidebar';
+import ChatBox from './ChatBox'; 
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
-          <Route path='/'>
+          <Route exact path='/'>
             <Header />
             <RightSidebar />
             <ChatList />
             <Home />
+          </Route>
+          <Route path='/TestAbdou'>
+          <ChatBox  />
           </Route>
         </Switch>
       </Router>
