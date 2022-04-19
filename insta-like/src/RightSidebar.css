@@ -4,7 +4,7 @@
     height: calc(100% - 56px);
     display: flex;
     left: 0px;
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     padding: 8px;
 }

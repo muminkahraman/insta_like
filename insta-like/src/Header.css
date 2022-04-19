@@ -1,4 +1,6 @@
 .header {
+    position: sticky;
+    top: 0;
     background-color: rgb(122, 122, 122);
     height: 40px;
     width: calc(100% - 16px);
