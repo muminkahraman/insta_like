@@ -5,17 +5,15 @@ import Home from './Home';
 import Header from './Header';
 import ChatList from './ChatList';
 import RightSidebar from './RightSidebar';
+import Register from './Register';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
-          <Route path='/'>
-            <Header />
-            <RightSidebar />
-            <ChatList />
-            <Home />
+          <Route path='/camelia'>
+            <Register />
           </Route>
         </Switch>
       </Router>
