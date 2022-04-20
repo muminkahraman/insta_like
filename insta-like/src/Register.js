@@ -13,6 +13,8 @@ import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import Paper from '@mui/material/Paper';
+import ToggleButton from '@mui/material/ToggleButton';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 /*function Register() {
   return (
@@ -45,9 +47,23 @@ import Paper from '@mui/material/Paper';
 
 //export default Register
 
+function toggleText(button_id) 
+{                      //-----\/ 'button_id' - > button_id
+   if (document.getElementById(button_id).innerText == "Lock") 
+   {
+       document.getElementById(button_id).innerText = "Unlock";
+   }
+   else 
+   {
+     document.getElementById(button_id).innerText = "Lock";
+   }
+}
+
 export default function InputWithIcon() {
+   const [selected, setSelected] = React.useState(false);
    return (
      <Box sx={{ '& > :not(style)': { m: 1 } }}>
+      <div className='title'>REGISTER</div>
       <div className = 'email'>
      
       <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
@@ -102,6 +118,23 @@ export default function InputWithIcon() {
        <div className = 'paper1'>
        <Paper variant="outlined" /> 
        </div>
+       <div className = 'button'>
+      <ToggleButton
+      value="check"
+      selected={selected}
+      onChange={() => {
+        setSelected(!selected);
+      }}
+    >
+      <ArrowForwardIcon />
+    </ToggleButton>
+    </div>
+    <div className='login'>Already have an account?</div>
+    <div className='login2'>
+    <button id="myButton" onClick="lock(); toggleText(this.id);">Login here</button>
+    </div>
      </Box>
+     
    );
- }
+   } 
+
